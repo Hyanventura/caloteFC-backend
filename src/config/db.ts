@@ -4,6 +4,6 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const pgp = pgPromise();
-const db = pgp(process.env.DATABASE_URL);
+const db = pgp(process.env.DATABASE_URL || 'localhost:3000');
 
 export default db;

@@ -1,6 +1,6 @@
 
 import cors from 'cors'
-import v1 from './v1/index.js';
+import v1 from './v1/index';
 import express from 'express';
 
 
