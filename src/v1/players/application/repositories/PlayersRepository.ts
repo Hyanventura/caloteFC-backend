@@ -1,6 +1,7 @@
 import { Player } from "../dtos/PlayerDTO";
 
 export interface PlayersRepository {
-    getPlayersRepository(): Promise<Player[]>
+    getPlayers(): Promise<Player[]>
+    deletePlayer(id: string): Promise<null>
 }
 
